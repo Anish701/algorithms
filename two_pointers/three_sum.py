@@ -21,7 +21,6 @@ class Solution:
                     right -= 1
                 else:
                     res.append([nums[i], nums[left], nums[right]])
-                    print(i, left, right)
                     left += 1
                     right -= 1 
 
