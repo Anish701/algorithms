@@ -13,9 +13,12 @@ ex: `["Hello","World"] -> "5#Hello5#World"`
 6. longest consecutive sequence: put everything in set; find starters (x-1 not in set); figure out that starter's length by checking if x + 1 is in set
 
 ### Two Pointers
-1. x
-2. 
+1. valid palindrome: left, right pointer; use .isalnum() bool and .lower()
+2. 2sum O(1) memory: left, right pointer; if less than target increase left, if more decrease right since it is sorted non-decreasing
+3. 3sum: first sort array; for each n in nums, use left and right pointer to find target - n; handle dups by starting n at last instance of dup; and avoid dups at left, right iteration
+4. container with most water: left, right pointer; calculate area, whichever is min(left, right), iterate that
+5. trapping rain water: left, right pointer; keep track of leftMax, rightMax; move wtv is smaller; as you iterate add up rain water max - height; this works bc if ur at pointer's max, no water can be trapped
 
 ### Stack
-1. x
+1. valid parenthesis: open = add it to stack; close = check top of stack and pop, if not match then return false
 2. 
