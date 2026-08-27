@@ -21,4 +21,6 @@ ex: `["Hello","World"] -> "5#Hello5#World"`
 
 ### Stack
 1. valid parenthesis: open = add it to stack; close = check top of stack and pop, if not match then return false
-2. 
+2. minStack: in stack keep track of elems relation to min rather than elem; when encounter new min use diff for old min so it is negative and u can keep track
+3. reverse polish notation: add nums to stack; when you see operator, empty stack and use operator on the two nums; add result to stack; only 2 vals in stack at any time
+4. 
