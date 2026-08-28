@@ -23,4 +23,6 @@ ex: `["Hello","World"] -> "5#Hello5#World"`
 1. valid parenthesis: open = add it to stack; close = check top of stack and pop, if not match then return false
 2. minStack: in stack keep track of elems relation to min rather than elem; when encounter new min use diff for old min so it is negative and u can keep track
 3. reverse polish notation: add nums to stack; when you see operator, empty stack and use operator on the two nums; add result to stack; only 2 vals in stack at any time
-4. 
+4. daily temps: maintain monotonic decreasing stack, if you encounter a warmer temp, start popping from stack, stack holds array [index, temp] vals
+5. car fleet: if a car's time to finish is less than the car starting in front of it, it joins the front car's fleet; go through list of positions/times in reverse and add up fleets
+6. largest recatangle histogram: stack storing (startIndex, height) monotonic increasing; when shorter bar appears, pop taller bars and calc areas, updating startIndex for short bar
