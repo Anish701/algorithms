@@ -26,3 +26,7 @@ ex: `["Hello","World"] -> "5#Hello5#World"`
 4. daily temps: maintain monotonic decreasing stack, if you encounter a warmer temp, start popping from stack, stack holds array [index, temp] vals
 5. car fleet: if a car's time to finish is less than the car starting in front of it, it joins the front car's fleet; go through list of positions/times in reverse and add up fleets
 6. largest recatangle histogram: stack storing (startIndex, height) monotonic increasing; when shorter bar appears, pop taller bars and calc areas, updating startIndex for short bar
+
+### Binary Search
+1. binary search: use left and right pointer and calculate median of left and right
+2. search 2d matrix: same strategy as binary search of list, treat matrix as one long list, calculate row/col using // and % operators like valid sudoku
