@@ -31,4 +31,5 @@ ex: `["Hello","World"] -> "5#Hello5#World"`
 1. binary search: use left and right pointer and calculate median of left and right
 2. search 2d matrix: same strategy as binary search of list, treat matrix as one long list, calculate row/col using // and % operators like valid sudoku
 3. koko bananas: k is rate we want to optimize rate; binary search from k=1 to k=max(piles) or lowest rate is 1 and highest rate is largest pile
-4. find min in rotated array: two sorted segments of array, min always in right segment; compare mid to right and move right or left to min
+4. find min in rotated sorted array: two sorted segments of array, min always in right segment; compare mid to right and move right or left to min
+5. search rotated sorted array: left, right pointer; determine which side of mid is sorted; check if target in range of sorted side; update left or right
