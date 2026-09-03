@@ -34,3 +34,4 @@ ex: `["Hello","World"] -> "5#Hello5#World"`
 4. find min in rotated sorted array: two sorted segments of array, min always in right segment; compare mid to right and move right or left to min
 5. search rotated sorted array: left, right pointer; determine which side of mid is sorted; check if target in range of sorted side; update left or right
 6. time based key value store: treat the timestamps as an array; find closest timestamp which is <= target; dict[key] = [[value1, timestamp1], [value2, timestamp2]]
+7. median of two sorted arrays: to find median you need to equal partitions left/right; make partitions on each array Aleft, Bleft, Aright, Bright such that length of Aleft + Bleft = half of total. update the partitions Aleft, Bleft so that the borders of Aleft and Bleft are less than Aright and Bright
