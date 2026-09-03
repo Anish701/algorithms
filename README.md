@@ -38,4 +38,4 @@ ex: `["Hello","World"] -> "5#Hello5#World"`
 
 ### Sliding Window
 1. best time to buy/sell stock: set minimum buy to first day; iterate through list and update minimum buy while also calculation profit
-2. 
+2. longest substring with unique characters: sliding window and set; if duplicate encountered move left pointer up and remove from set until no more duplicate
