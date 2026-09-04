@@ -40,3 +40,4 @@ ex: `["Hello","World"] -> "5#Hello5#World"`
 1. best time to buy/sell stock: set minimum buy to first day; iterate through list and update minimum buy while also calculation profit
 2. longest substring with unique characters: sliding window and set; if duplicate encountered move left pointer up and remove from set until no more duplicate
 3. longest repeating character with replacement substring: length of substring cannot be more than maxFreq + k; keep track of freqs in dictionary
+4. permutation in string: sliding window; build array of char counts; once counts equals that of s1 return true; if not keep moving left to decrement and right to increment
