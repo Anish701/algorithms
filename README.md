@@ -43,3 +43,6 @@ ex: `["Hello","World"] -> "5#Hello5#World"`
 4. permutation in string: sliding window; build array of char counts; once counts equals that of s1 return true; if not keep moving left to decrement and right to increment
 5. minimum window substring: keep track of both character counts in dict; sliding window, while character count of substring matches target, keep pushing left pointer forward to minimize substring, but if missing characters then push right pointer forward to acquire equivalence
 6. sliding window maximum: max heap with heapq using negative values; keep removing max heap top val if not in window
+
+### Linked List
+1. reverse linked list: maintain 3 vars, prev, current, and next, so you can switch pointers without losing track of next value 
