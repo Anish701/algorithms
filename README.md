@@ -48,3 +48,4 @@ ex: `["Hello","World"] -> "5#Hello5#World"`
 1. reverse linked list: maintain 3 vars, prev, current, and next, so you can switch pointers without losing track of next value
 2. merge sorted linked lists: maintain 2 iterators list1 list2 one for each list; have a dummy itr where you can return dummy.next and a main traversing itr curr; set curr's next to whichever list1 or list2 is less and move that list itr to its next
 3. linked list cycle detection: slow and fast pointer; if slow==fast then cycle if fast hits end then no cycle
+4. reorder list: 
