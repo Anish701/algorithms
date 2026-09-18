@@ -50,3 +50,4 @@ ex: `["Hello","World"] -> "5#Hello5#World"`
 3. linked list cycle detection: slow and fast pointer; if slow==fast then cycle if fast hits end then no cycle
 4. reorder list: use fast/slow pointer to find middle; reverse 2nd half; merge 1st half and 2nd half alternatingly
 5. remove Nth from end: use two points; move right pointer N spaces from head; then move right and left pointers together until right reaches end; left will now be N from end so remove left
+6. copy linked list: embed new list within old list like A -> A' -> B -> B'; 1st create new nodes with val/next; 2nd assign randoms l2.random = l1.random.next; 3rd is split up the lists
