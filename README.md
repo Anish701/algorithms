@@ -52,3 +52,4 @@ ex: `["Hello","World"] -> "5#Hello5#World"`
 5. remove Nth from end: use two points; move right pointer N spaces from head; then move right and left pointers together until right reaches end; left will now be N from end so remove left
 6. copy linked list: embed new list within old list like A -> A' -> B -> B'; 1st create new nodes with val/next; 2nd assign randoms l2.random = l1.random.next; 3rd is split up the lists
 7. add two numbers: traverse through linked lists; create new node with total-10, keep track of carry value; treat missing digits as 0s 57+1098 = 0057+1098
+8. find duplicate: use fast/slow pointer to find cycle; leave slow pointer where the fast/slow intersected; have slow2 begin at 0 and move slow/slow2 one by one until intersect
