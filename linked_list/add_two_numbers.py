@@ -11,24 +11,17 @@ class Solution:
         itr = dummy = ListNode()
         carry = 0
 
-        while l1 or l2:
+        while l1 or l2 or carry:
             l1val = l1.val if l1 else 0
             l2val = l2.val if l2 else 0
 
             total = l1val + l2val + carry
-            tmp = ListNode(total - 10)
+            itr.next = ListNode(total % 10)
+            
+            itr = itr.next
             carry = total >= 10
 
-            itr.next = tmp
-            itr = itr.next
-
-            if l1:
-                l1 = l1.next
-            if l2:
-                l2 = l2.next
-
-        if carry:
-            tmp = ListNode(1)
-            itr.next = tmp
+            l1 = l1.next if l1 else None
+            l2 = l2.next if l2 else None
 
         return dummy.next
