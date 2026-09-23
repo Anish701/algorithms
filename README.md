@@ -53,3 +53,4 @@ ex: `["Hello","World"] -> "5#Hello5#World"`
 6. copy linked list: embed new list within old list like A -> A' -> B -> B'; 1st create new nodes with val/next; 2nd assign randoms l2.random = l1.random.next; 3rd is split up the lists
 7. add two numbers: traverse through linked lists; create new node with total-10, keep track of carry value; treat missing digits as 0s 57+1098 = 0057+1098
 8. find duplicate: use fast/slow pointer to find cycle; leave slow pointer where the fast/slow intersected; have slow2 begin at 0 and move slow/slow2 one by one until intersect
+9. lru cache: use OrderedDict; least recently used key-val should be at end where you can pop at the end; if key is used then move it to the front move_to_end(key, last=False)
