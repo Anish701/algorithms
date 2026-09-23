@@ -55,3 +55,4 @@ ex: `["Hello","World"] -> "5#Hello5#World"`
 8. find duplicate: use fast/slow pointer to find cycle; leave slow pointer where the fast/slow intersected; have slow2 begin at 0 and move slow/slow2 one by one until intersect
 9. lru cache: use OrderedDict; least recently used key-val should be at end where you can pop at the end; if key is used then move it to the front move_to_end(key, last=False)
 10. merge k sorted linked lists: use minheap; push all starting nodes into minheap; pop top of minheap to res link list (after dummy node); after pop add that node's next to minheap
+11. reverse nodes in k-groups: keep track of previous group's last element and next group's first; find next group's first by iterating k steps; create dummy node for initial prevLast; reverse nodes in between
