@@ -54,3 +54,4 @@ ex: `["Hello","World"] -> "5#Hello5#World"`
 7. add two numbers: traverse through linked lists; create new node with total-10, keep track of carry value; treat missing digits as 0s 57+1098 = 0057+1098
 8. find duplicate: use fast/slow pointer to find cycle; leave slow pointer where the fast/slow intersected; have slow2 begin at 0 and move slow/slow2 one by one until intersect
 9. lru cache: use OrderedDict; least recently used key-val should be at end where you can pop at the end; if key is used then move it to the front move_to_end(key, last=False)
+10. merge k sorted linked lists: use minheap; push all starting nodes into minheap; pop top of minheap to res link list (after dummy node); after pop add that node's next to minheap
