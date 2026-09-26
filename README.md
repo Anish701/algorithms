@@ -61,3 +61,4 @@ ex: `["Hello","World"] -> "5#Hello5#World"`
 1. invert binary tree: DFS recursion; base condition: if not root return none; then invert left/right nodes; call invert function on left/right nodes; then return root; can be done with stack too
 2. max depth binary tree: DFS recursion; base condition: if not root return 0; then calculate height which is 1 + max of recursive call on left/right; return height
 3. diameter of binary tree: global res; create recursive dfs method which returns height and updates res; diameter = leftH+rightH
+4. balanced binary tree: global res=true; create recursive dfs method which returns height and sets res to false if left/right height diff > 1 
