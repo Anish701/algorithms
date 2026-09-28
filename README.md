@@ -63,3 +63,4 @@ ex: `["Hello","World"] -> "5#Hello5#World"`
 3. diameter of binary tree: global res; create recursive dfs method which returns height and updates res; diameter = leftH+rightH
 4. balanced binary tree: global res=true; create recursive dfs method which returns height and sets res to false if left/right height diff > 1 
 5. same binary tree: dfs; call isSameTree method recursively for left and right subtrees; return left and right; base case is if either or both p and q is none
+6. is subtree: dfs; create isSameTree helper method; make isSubtree recursive; base case true when none subroot but false when none root; if root/subroot sameTree return True; else return if root.left OR root.right isSubtree of subroot
