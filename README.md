@@ -66,3 +66,4 @@ ex: `["Hello","World"] -> "5#Hello5#World"`
 6. is subtree: dfs; create isSameTree helper method; make isSubtree recursive; base case true when none subroot but false when none root; if root/subroot sameTree return True; else return if root.left OR root.right isSubtree of subroot
 7. lowest common ancestor in BST: since it is BST, if root.val is between p and q then that is the LCA and return; if root.val > both then call LCA on root.left; if root.val < both then call LCA on root.right
 8. binary tree level order traversal: call recursive dfs inner function, but keep track of level number, if level >= len(res) then add list to res double list
+9. binary tree right side view: call recursive dfs inner function, but keep track of level number, only append to res if level == res, do not append if there is already value at level (that means there is rightmost), do dfs(root.right) FIRST to ensure rightmost
