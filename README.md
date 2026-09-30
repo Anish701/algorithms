@@ -68,3 +68,4 @@ ex: `["Hello","World"] -> "5#Hello5#World"`
 8. binary tree level order traversal: call recursive dfs inner function, but keep track of level number, if level >= len(res) then add list to res double list
 9. binary tree right side view: call recursive dfs inner function, but keep track of level number, only append to res if level == res, do not append if there is already value at level (that means there is rightmost), do dfs(root.right) FIRST to ensure rightmost
 10. count good nodes in binary tree: call recursive dfs inner function, but keep track of maxVal seen so far; if node.val >= maxVal then update maxVal and increment res (nonlocal defined in main func); call dfs on both left/right
+11. valid binary search tree: dfs recursively call isValid and keep track of left/min right/max boundaries; base case return true if not root; return false if root val outside of range; pass root as left/min boundary when dfs on root.right and vice versa
