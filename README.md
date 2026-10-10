@@ -73,3 +73,6 @@ ex: `["Hello","World"] -> "5#Hello5#World"`
 13. construct binary tree preorder and inorder: recursive dfs; if no preorder/inorder lists return; build root from preorder[0] find index of root in inorder; recursively build left/right subtrees but update preorder/inorder based on inorder index of root
 14. binary tree max path sum: recursive dfs where you return root's val + leftMax or rightMax; ensure leftMax/rightMax floor is 0 (to handle negatives); so max sum is path through root; update res if left+root.val+right is more
 15. serialize and deserialize binary tree: serialize just use dfs preorder root -> left -> right but for None nodes use "N" to represent if left/right point to None; deserialize use dfs but use a counter to keep track of which value to add from list
+
+### Tries
+1. Implement trie prefix tree: each trie node has letters as children (26 if array); trie with dog and door is d-o splits to g and then o-r
