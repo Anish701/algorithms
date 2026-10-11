@@ -76,3 +76,4 @@ ex: `["Hello","World"] -> "5#Hello5#World"`
 
 ### Tries
 1. Implement trie prefix tree: each trie node has letters as children (26 if array); trie with dog and door is d-o splits to g and then o-r
+2. tries add and search words with optional char: regular trie (use dict) but for search if c=='.' then do recursive dfs on each child value
