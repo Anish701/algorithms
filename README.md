@@ -80,3 +80,4 @@ ex: `["Hello","World"] -> "5#Hello5#World"`
 
 ### Backtracking
 1. subsets: return all subsets so either index is in it or not 2^n decision tree; use dfs/backtracking; one dfs after adding and another after popping index from subset; base case if curr_index == len(input_arr)
+2. combination sum: use dfs/backtracking; sort nums; maintain subset as shared mutable set; dfs func tracks i and total; base case if total is target copy subset and add to res; loop through all nums after i and do dfs/backtracking; base case within loop if total is over target return
