@@ -89,3 +89,6 @@ ex: `["Hello","World"] -> "5#Hello5#World"`
 8. palindrome partitioning: dfs backtracking; isPali helper method; dfs keep track substring start and cur index i; every step, if palindrome, either add substring to cur=[] and start new OR keep moving forward (backtrack cur.pop); base case when i is at end; add cur to res if last substr is palindrome
 9. letter combo phone number: dfs backtracking; create dict of digit->chars; dfs pass in index i; base case if i at end of digits then stringify cur and add to res `"".join(cur)`; loop through all chars for that digit and backtrack so cur.append(char); dfs; then pop; do not do dfs on exclusion
 10. N queens: create empty board ['.'] start backtracking for row 0; for cur row, place queen in every column only if isSafe; place queen then call recursion to next row then remove queen after returning backtrack; if r==n base case copy board and add to result; for isSafe check above rows and upper diagnals
+
+### Heaps and Priority Queues
+1. kth largest element in stream: min-heapify list in constructor; do heappop until heap length less than k; heap should only contain k-largest; for add do heappush but then do heappop; then return heap[0]
