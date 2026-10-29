@@ -93,3 +93,4 @@ ex: `["Hello","World"] -> "5#Hello5#World"`
 ### Heaps and Priority Queues
 1. kth largest element in stream: min-heapify list in constructor; do heappop until heap length less than k; heap should only contain k-largest; for add do heappush but then do heappop; then return heap[0]
 2. last stone weight: max heapify stones; while stones > 1, pull first and second with two pops; if first > second then heappush(first-second); return last remaining val in stones or 0
+3. k closest points to origin: do max heap; go through points calculate distance as sorting index and add to maxheap; if len(maxheap) > k then pop (get rid of farthest point); maxHeap ends up having only shortest distances, keep track of point or index in maxHeap as well to return the points
