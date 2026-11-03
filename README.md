@@ -96,3 +96,4 @@ ex: `["Hello","World"] -> "5#Hello5#World"`
 3. k closest points to origin: do max heap; go through points calculate distance as sorting index and add to maxheap; if len(maxheap) > k then pop (get rid of farthest point); maxHeap ends up having only shortest distances, keep track of point or index in maxHeap as well to return the points
 4. kth largest elem in array: minHeap where you add each num, but if len(minHeap) > k you pop getting rid of smallest; heap ends up with k largest elems, return the top of heap
 5. task scheduler: forget about task char; maxHeap of just counts (frequency of tasks); empty queue of waiting tasks [cnt, ready time]; loop until maxHeap and q are empty; if top of queue is ready, add its count to maxHeap; if maxHeap present pop count-=1 and add back to queue if count non-zero; time+=1; maxHeap is for ready tasks
+6. design twitter: 
