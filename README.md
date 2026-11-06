@@ -98,3 +98,6 @@ ex: `["Hello","World"] -> "5#Hello5#World"`
 5. task scheduler: forget about task char; maxHeap of just counts (frequency of tasks); empty queue of waiting tasks [cnt, ready time]; loop until maxHeap and q are empty; if top of queue is ready, add its count to maxHeap; if maxHeap present pop count-=1 and add back to queue if count non-zero; time+=1; maxHeap is for ready tasks
 6. design twitter: global count like timestamp, tweetMap dict(list) for userId -> [[tweetId, count]], followerMap dict(set) for userId -> (followee1); getNewsFeed put each followee's most recent tweet in heap, go through the heap popping most recent tweet but immediately adding back that tweet's user's next recent tweet
 7. find median: maintain two separate arrays, one for smallest half, other for biggest half; smallest half should be maxHeap; biggest half is minHeap; median is either/between maxHeap's top and minHeap's top
+
+### Graphs
+1. number of islands: loop through each cell in matrix to check if island starts here; if cell is land and not already visited, do DFS going out all 4 directions, adding to visited set; incremend island count after DFS
