@@ -103,3 +103,4 @@ ex: `["Hello","World"] -> "5#Hello5#World"`
 1. number of islands: loop through each cell in matrix to check if island starts here; if cell is land and not already visited, do DFS going out all 4 directions, adding to visited set; incremend island count after DFS
 2. max area of islands: same as previous answer but keep track of current area in dfs stack either by using/resetting global variable or returning area in dfs function directly
 3. clone graph: create dictionary to map old node pointers to new node pointers; dfs; base case if node copy already mapped then return copy from dict; else make a copy and recursively call dfs when copying neighbors
+4. islands and treasures: use BFS to update paths, use queue; keep track of levels using distance; first level of BFS should be cells with treasure chest so dist is 0; then increment dist by 1 for next levels
